@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
     display: 'flex', 
     width:"100%", 
     height:"100%",
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('lg')]: {
       flexWrap: 'wrap',
       flexDirection: 'column',
     },
@@ -15,7 +15,7 @@ export default makeStyles((theme) => ({
     maxWidth: 128, 
     height: 168, 
     cursor:"pointer",
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('lg')]: {
       maxWidth:"100%"
     },
   },
@@ -23,7 +23,7 @@ export default makeStyles((theme) => ({
     display: 'flex', 
     maxWidth: 'calc(100% - 128px)', 
     flexDirection: 'column',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('lg')]: {
       maxWidth:"100%"
     },
   },
