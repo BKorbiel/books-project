@@ -1,0 +1,10 @@
+export const START_LOADING = 'START_LOADING';
+export const END_LOADING = 'END_LOADING';
+export const FETCH_BY_SEARCH = 'FETCH_BY_SEARCH';
+export const FETCH_BOOK = 'FETCH_BOOK';
+export const FETCH_PROFILE = 'FETCH_PROFILE';
+export const UPDATE_PROFILE = 'UPDATE_PROFILE';
+export const UPDATE_COMMENTS = 'UPDATE_COMMENTS';
+export const DELETE_COMMENT = 'DELETE_COMMENT';
+export const AUTH = 'AUTH';
+export const LOGOUT = 'LOGOUT';
