@@ -30,7 +30,7 @@ const Books = () => {
 		isLoading ? <CircularProgress /> : (
 			<Grid container alignItems="stretch" spacing={3}>
 				{books.map((book) => (
-					<Grid key={book.id} item xs={12} sm={4}>
+					<Grid key={book.id} item xs={12} sm={6} md={4}>
 						<Book book={book}/>
 					</Grid>
 				))}
