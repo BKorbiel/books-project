@@ -10,7 +10,8 @@
 ## General Information
 > Full Stack MERN App using Google Books APIs with email or Google authentication, 
 > comments, user profiles and search capability. 
-> App is fully mobile responsive. Live demo [_here_](https://books-project.cyclic.app).
+> App is fully mobile responsive. I made this project to learn web technologies. <br/> 
+> Live demo [_here_](https://books-project.cyclic.app).
 
 
 ## Technologies Used
