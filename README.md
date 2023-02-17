@@ -46,7 +46,7 @@
 - Go to the second useEffect 
 - Change google client_id to your own.
 #### Run application
--Run command line in app directory and write: <br/>
+- Run command line in app directory and write: <br/>
 `cd client` <br/>
 `npm i` <br/>
 `cd ..` <br/>
