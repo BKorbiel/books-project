@@ -46,9 +46,10 @@ SECRET_WORD = YOUR_SECRET_WORD (for example: test)'
 - Go to the second useEffect 
 - Change google client_id to your own.
 #### Run application
-`cd client
-npm i
-cd ..
-npm i
+-Run command line in app directory and write:
+`cd client<br/>
+npm i <br/>
+cd .. <br/>
+npm i <br/>
 npm start`
 - Open app in browser with URL (for example: http://localhost:5000/)
