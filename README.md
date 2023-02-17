@@ -35,7 +35,7 @@
 
 ## Setup
 #### Env Variables
-- Create .env file and add appropriate variables:
+- Create .env file and add appropriate variables: <br/>
 `PORT = YOUR_PORT (for example 5000)` <br/>
 `CONNECTION_URL = YOUR_MONGODB_CONNECTION_URL` <br/>
 `SECRET_WORD = YOUR_SECRET_WORD (for example: test)`
