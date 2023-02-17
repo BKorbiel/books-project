@@ -10,7 +10,8 @@
 ## General Information
 > Full Stack MERN App using Google Books APIs with email or Google authentication, 
 > comments, user profiles and search capability. 
-> App is fully mobile responsive. Live demo [_here_](https://books-project.cyclic.app).
+> App is fully mobile responsive. I made this project to learn web technologies. <br/> 
+> Live demo [_here_](https://books-project.cyclic.app).
 
 
 ## Technologies Used
@@ -35,10 +36,10 @@
 
 ## Setup
 #### Env Variables
-- Create .env file and add appropriate variables:
-'PORT = YOUR_PORT (for example 5000)
-CONNECTION_URL = YOUR_MONGODB_CONNECTION_URL
-SECRET_WORD = YOUR_SECRET_WORD (for example: test)'
+- Create .env file and add appropriate variables: <br/>
+`PORT = YOUR_PORT (for example 5000)` <br/>
+`CONNECTION_URL = YOUR_MONGODB_CONNECTION_URL` <br/>
+`SECRET_WORD = YOUR_SECRET_WORD (for example: test)`
 #### Google OAuth
 - Create new credentials in google cloud console and get your own OAuth client ID
 - In google cloud console set your own URIs (for example: http://localhost:5000 and http://localhost:5000/auth)
@@ -46,9 +47,10 @@ SECRET_WORD = YOUR_SECRET_WORD (for example: test)'
 - Go to the second useEffect 
 - Change google client_id to your own.
 #### Run application
-`cd client
-npm i
-cd ..
-npm i
-npm start`
+- Run command line in app directory and write: <br/>
+`cd client` <br/>
+`npm i` <br/>
+`cd ..` <br/>
+`npm i` <br/>
+`npm start`
 - Open app in browser with URL (for example: http://localhost:5000/)
