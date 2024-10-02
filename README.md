@@ -1,5 +1,4 @@
 # Books - Full Stack MERN App
-> Live demo [_here_](https://books-project.cyclic.app).
 
 ## Table of Contents
 * [General Info](#general-information)
