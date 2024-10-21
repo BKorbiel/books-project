@@ -9,6 +9,7 @@ import {signin, signup, googleSignIn} from '../../actions/auth';
 
 const Auth = () => {
 	const classes = useStyles();
+	const [error, setError] = useState(null);
 	const [showPassword, setShowPassword] = useState(false);
 	const [isSignUp, setIsSignUp] = useState(false);
 	const [formData, setFormData] = useState({firstName:'', lastName:'', email:'', password:'', confirmPassword:''});
@@ -17,20 +18,22 @@ const Auth = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		if(isSignUp) {
-			dispatch(signup(formData, navigate));
+			dispatch(signup(formData, navigate, setError));
 		}
 		else {
-			dispatch(signin(formData, navigate));
+			dispatch(signin(formData, navigate, setError));
 
 		}
 	};
 	const handleChange = (e) => {
+		setError(null);
 		setFormData({...formData, [e.target.name]: e.target.value});
 	};
 
 	const handleShowPassword = () => setShowPassword((prev) => !prev);
 
 	const switchMode = () => {
+		setError(null);
 		setIsSignUp((prev) => !prev);
 		setShowPassword(false);
 	};
@@ -38,7 +41,7 @@ const Auth = () => {
 	const handleCallbackRespons = async (res) => {
 		const token = res?.credential;
 		try {
-			dispatch(googleSignIn({token}, navigate));
+			dispatch(googleSignIn({token}, navigate, setError));
 		} catch (error) {
 			console.log(error);
 		}
@@ -86,7 +89,10 @@ const Auth = () => {
 					<Button type="submit" fullWidth variant="contained" color="primary" className={classes.submit}>
 						{isSignUp ? "Sign Up" : "Sign In"}
 					</Button>
-					<br/><br/>
+					{
+						error ? <Typography style={{fontSize: 13, color: "red"}}>{error}</Typography> : null
+					}
+					<br/>
 					<div id="googleSignIn"></div>
 					<br/>
 					<Grid container justify="flex-end">
