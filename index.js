@@ -5,9 +5,9 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import booksRoutes from './routes/books.js';
-import userRoutes from './routes/users.js';
-import profilesRoutes from './routes/profiles.js';
+import booksRoutes from './functions/routes/books.js';
+import userRoutes from './functions/routes/users.js';
+import profilesRoutes from './functions/routes/profiles.js';
 
 const app = express();
 dotenv.config();
@@ -31,7 +31,6 @@ app.get("*", function (_, res) {
     }
   );
 });
-
 
 const PORT = process.env.PORT || 5000;
 

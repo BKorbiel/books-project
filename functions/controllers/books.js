@@ -21,6 +21,7 @@ export const getBook = async (req, res) => {
 };
 
 export const getBooksBySearch = async (req, res) => {
+	console.log("Get books");
 	const maxResult = "15";
 	const {searchQuery, subject, author, page} = req.query;
 	let search = searchQuery?.length ? searchQuery : "";
@@ -29,6 +30,7 @@ export const getBooksBySearch = async (req, res) => {
 	const startIndex = (page-1)*Number(maxResult);
 	axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&startIndex=${startIndex}&maxResults=${maxResult}&langRestrict=en`)
 	.then(response => {
+		console.log("Got book");
 		const books=response.data.items;
 		const numberOfPages=Math.ceil(response.data.totalItems/Number(maxResult));
 		res.status(200).json({numberOfPages: numberOfPages, data: books});

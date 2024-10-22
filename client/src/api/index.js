@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({baseURL: ''});
+const API = axios.create({baseURL: 'https://us-central1-the-literary-haven.cloudfunctions.net/api'});
 
 API.interceptors.request.use((req) => {
 	if(localStorage.getItem('user')) {

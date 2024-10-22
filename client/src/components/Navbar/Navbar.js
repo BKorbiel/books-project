@@ -37,7 +37,7 @@ const Navbar = () => {
 		<AppBar className={classes.appBar} position="static" color="inherit">
 			<Toolbar className={classes.toolBar}>
 				<div className={classes.brandContainer}> 
-					<Typography component={Link} to="/" className={classes.heading} variant="h2" align="center">Books</Typography>
+					<Typography component={Link} to="/" className={classes.heading} variant="h2" align="center">The Literary Haven</Typography>
 					<img className={classes.image} src="https://img.freepik.com/free-vector/stack-books-graphic-illustration_53876-8852.jpg?w=740&t=st=1672861468~exp=1672862068~hmac=1344547574369d0d81a2bcbe59c39102dd411b3604472212bd720b4830820901" alt="books" height="60"/>
 				</div>
 				{user ? (
