@@ -1,4 +1,5 @@
 # Books - Full Stack MERN App
+Live demo available [here](https://the-literary-haven.web.app/)
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -8,8 +9,7 @@
 
 ## General Information
 > Full Stack MERN App using Google Books APIs with email or Google authentication, 
-> comments, user profiles and search capability. 
-> App is fully mobile responsive. I made this project to learn web technologies. <br/> 
+> comments, user profiles and search capability. Mobile responsive. <br/> 
 
 ## Technologies Used
 - React.js - version 18.2.0
@@ -26,8 +26,8 @@
 - Detailed pages
 - Adding, deleting, editing, liking comments
 - Signing in by Google OAuth or by email & password
-- Adding books to lists (3 lists available)
-- Profile editing
+- Adding books to lists (3 lists available: Books to read, Already read books and Favourite books)
+- Profile editing (Avatar/nickname)
 - Pagination
 - Mobile responsive
 
@@ -44,9 +44,9 @@
 - Go to the second useEffect 
 - Change google client_id to your own.
 #### Run application
-- Run command line in app directory and write: <br/>
+- Run command line in app directory and run: <br/>
 `cd client` <br/>
-`npm i` <br/>
+`npm install --legacy-peer-deps` <br/>
 `cd ..` <br/>
 `npm i` <br/>
 `npm start`
